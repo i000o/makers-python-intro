@@ -12,7 +12,8 @@ from lib.helpers import check_that_these_are_equal
 
 # YOUR FUNCTION GOES BELOW THIS LINE
 
-
+def add_two(n):
+  return n + 2
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
 
