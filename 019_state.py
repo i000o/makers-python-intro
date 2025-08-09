@@ -16,5 +16,6 @@ print(f"b is {b}")
 # Was it what you expected?
 
 # No, "a is 20, b is 20". A got reassigned to B? I thought it would be the other way round. 
+# Assignment flows from left to right 
 
 # Try to puzzle it out, and then move on to 020_state_tables.py

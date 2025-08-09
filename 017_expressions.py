@@ -76,7 +76,7 @@ add_one(4) * 3      # Evaluates to 15
 
 # @TASK: Try those expressions yourself. Run:
 #
-#   python -i 017_expressions.py
+  # python -i 017_expressions.py
 #
 # And then type in some of the above expressions.
 #
