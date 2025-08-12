@@ -60,8 +60,15 @@ print("Function: count_words_by_length")
 # result: {3: 2, 1: 1, 4: 1}
 # Since there are two words of length 3, etc.
 
-def count_words_by_length(words):
-  pass
+def count_words_by_length(words): # Make a function that takes the list words and counts them by length 
+  word_length_count = {} # To do this, create a dictionary to store the count 
+  for word in words: # iterate over each word (element) in the words list 
+    word_length = len(word) # create a variable to store their lengths, do this by accessing lengths using len() 
+    if word_length not in word_length_count: # if the length of the word stored is not already found in the dictionary i.e. word length = 4 and we haven't seen that yet 
+      word_length_count[word_length] = 1 # add it to the dictionary and note its value at 1 (the first instance we've seen it in the loop)
+    else: # otherwise, 
+      word_length_count[word_length] = word_length_count[word_length] + 1 # if we have already seen it, retrieve the word_length key in the dictionary and add 1 to its value 
+  return word_length_count # return the dictionary in full form once the loop has completed over all the words in the list WATCH FOR RETURN KEYWORD BEING NESTED INSIDE FOR LOOP 
 
 check_that_these_are_equal(
   count_words_by_length(["hat", "cat", "I", "bird"]),
